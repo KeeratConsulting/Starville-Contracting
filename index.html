@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Starville Contracting</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Starville Contracting</title>
+      
+        <!-- Favicon setup -->
+        <link rel="icon" href="img/icon.jpg" type="image/jpeg">
+        <link rel="shortcut icon" href="img/icon.jpg" type="image/jpeg">
+        <link rel="apple-touch-icon" href="img/icon.jpg">
+      
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+      </head>
+
+      <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+          document.querySelector('.nav-links').classList.toggle('open');
+        });
+      </script>
+      
+      
 <body>
   <!-- HEADER -->
   <header class="site-header">
@@ -13,18 +28,26 @@
       <a href="index.html">
         <img src="img/logo.jpg" alt="Starville Contracting Logo" class="logo" />
       </a>
+  
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  
       <nav>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#what-we-do">What We Do</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>   
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#what-we-do">What We Do</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
+  
 
   <!-- HERO SECTION -->
   <section class="hero hero-full-image">

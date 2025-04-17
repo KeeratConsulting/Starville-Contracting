@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #fdfbf6;
     color: #222;
-    padding-top: 100px; /* For fixed header spacing */
+    padding-top: 100px;
   }
   
   html {
@@ -69,19 +69,55 @@ body {
     color: #831f1f;
   }
   
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+  }
+  
   @media (max-width: 768px) {
     .nav-container {
-      flex-direction: column;
-      gap: 20px;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+  
+    .menu-toggle {
+      display: flex;
     }
   
     .nav-links {
+      display: none;
       flex-direction: column;
       gap: 10px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links li a {
+      font-size: 16px;
+      padding: 10px;
     }
   
     .logo {
-      margin-bottom: 10px;
+      margin-bottom: 0;
     }
   }
   
@@ -156,9 +192,24 @@ body {
   }
   
   @media (max-width: 768px) {
+    .hero-overlay-text {
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px;
+      max-width: 90%;
+    }
+  
     .hero-overlay-text h1 {
-      font-size: 32px;
+      font-size: 28px;
       white-space: normal;
+    }
+  
+    .hero-overlay-text .hero-subtitle {
+      font-size: 18px;
+    }
+  
+    .hero-overlay-text .hero-tagline {
+      font-size: 16px;
     }
   }
   
