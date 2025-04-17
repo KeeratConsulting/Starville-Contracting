@@ -4,7 +4,6 @@ body {
     background-color: #fdfbf6;
     color: #222;
     padding-top: 100px;
-    overflow-x: hidden;
   }
   
   html {
@@ -30,7 +29,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    position: relative;
   }
   
   .logo {
@@ -238,14 +236,6 @@ body {
     .nav-container {
       position: relative;
     }
-  
-    body {
-      overflow-x: hidden;
-    }
-  
-    .hero-full-image {
-      overflow-x: hidden;
-    }
   }
   
   
@@ -344,17 +334,10 @@ body {
     }
   }
   
-  .about-section .about-content p {
-    font-family: 'Segoe UI', sans-serif;
-  font-size: 18px;
-  line-height: 1.7;
-  color: #444;
-  margin-bottom: 20px;
-  word-wrap: break-word;
-  word-break: break-word;
-  max-width: 100%;
-  display: block;
-}
+  .about-section {
+    background-color: #fdfbf6;
+    padding: 80px 20px;
+  }
   
   .about-container {
     display: flex;
@@ -387,17 +370,11 @@ body {
   }
   
   .about-content p {
-    font-family: 'Segoe UI', sans-serif;
-  font-size: 18px;
-  line-height: 1.7;
-  color: #444;
-  margin-bottom: 20px;
-  word-wrap: break-word;
-  word-break: break-word;
-  max-width: 100%;
-  display: block;
-}
-
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #444;
+  }
   
   .about-highlight {
     font-weight: bold;
@@ -416,16 +393,9 @@ body {
     }
   
     .about-content p {
-        font-family: 'Segoe UI', sans-serif;
-        font-size: 18px;
-        line-height: 1.7;
-        color: #444;
-        margin-bottom: 20px;
-        word-wrap: break-word;
-        word-break: break-word;
-        max-width: 100%;
-        display: block;
-      }
+      font-size: 16px;
+    }
+  }
   
   .what-we-do {
     background-color: #ffffff;
