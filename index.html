@@ -162,12 +162,7 @@
     </div>
   </section>
   
-  
-      
-        <!-- Add buttons -->
-        <button class="review-btn prev" onclick="changeReview(-1)">&#10094;</button>
-        <button class="review-btn next" onclick="changeReview(1)">&#10095;</button>
-      </div>     
+    
   </section>
 
   
@@ -202,16 +197,26 @@
         <p>For quotes, project enquiries, or general questions, feel free to reach out. We're happy to help!</p>
       </div>
       <div class="contact-form">
-        <form action="mailto:info@starvillecontracting.com" method="post" enctype="text/plain">
+        <form action="https://getform.io/f/agdpmrwb" method="POST">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+      
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+      
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      
+          <!-- Optional: Subject for your notification email -->
+          <input type="hidden" name="_subject" value="New enquiry from Starville Contracting">
+      
+          <!-- Optional: Redirect after successful form submission -->
+          <input type="hidden" name="_redirect" value="https://starvillecontracting.com/thank-you">
+      
           <button type="submit">Send Message</button>
         </form>
       </div>
+      
     </div>
   </section>
 
